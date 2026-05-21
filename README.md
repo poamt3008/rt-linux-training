@@ -1,13 +1,84 @@
-# RT Linux Training
+Proyecto de entrenamiento en Sistemas en Tiempo Real (STR) usando Linux embebido, POSIX Threads y Raspberry Pi.
 
-Real-Time Systems training project using Linux, pthreads and Raspberry Pi.
+## Objetivos
 
-## Topics
-- POSIX Threads
-- Scheduling
-- Mutex
-- Semaphores
-- Periodic Tasks
-- Real-Time Linux
-- Raspberry Pi GPIO
-- Embedded Linux
+- Aprender programación concurrente en C
+- Implementar tareas periódicas
+- Estudiar scheduling en Linux
+- Practicar sincronización entre tareas
+- Desarrollar arquitectura multitarea embebida
+- Integrar GPIO y visión artificial básica
+
+---
+
+## Tecnologías
+
+- Raspberry Pi 3 B+
+- Linux Embedded
+- POSIX Threads (pthread)
+- GCC
+- Git / GitHub
+- Visual Studio Code Remote SSH
+
+---
+
+## Estructura del proyecto
+
+```text
+rt_linux_training/
+├── app/
+├── core/
+├── drivers/
+├── tasks/
+├── include/
+├── docs/
+├── scripts/
+├── tests/
+├── README.md
+├── Makefile
+└── .gitignore
+```
+
+---
+
+## Ejemplos implementados
+
+| Archivo | Descripción |
+|---|---|
+| pthread_intro.c | Creación básica de hilos |
+| pthread_main_exit.c | Terminación del hilo principal usando pthread_exit() |
+
+---
+
+## Compilación
+
+Ejemplo:
+
+```bash
+gcc app/pthread_intro.c -o app/pthread_intro -lpthread
+```
+
+---
+
+## Ejecución
+
+```bash
+./app/pthread_intro
+```
+
+---
+
+## Conceptos estudiados
+
+- Threads
+- Concurrencia
+- Scheduler Linux
+- pthread_create()
+- pthread_exit()
+- pthread_join()
+
+---
+
+## Autor
+
+Ander
