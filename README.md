@@ -83,4 +83,4 @@ gcc app/pthread_intro.c -o app/pthread_intro -lpthread
 
 ## Autor
 
-Ander
+Anderson
