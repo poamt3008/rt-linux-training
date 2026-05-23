@@ -1,0 +1,21 @@
+Creando thread 0
+Creando thread 1
+Thread 0 iniciado
+Mensaje: Soy el Hilo 0
+Creando thread 2
+Thread 1 iniciado
+Mensaje: Soy el Hilo 1
+Creando thread 3
+Thread 2 iniciado
+Mensaje: Soy el Hilo 2
+Thread 3 iniciado
+Mensaje: Soy el Hilo 3
+Creando thread 4
+Soy el hilo main, terminando mi proceso 
+Thread 0 terminando
+Thread 1 terminando
+Thread 4 iniciado
+Mensaje: Soy el Hilo 4
+Thread 2 terminando
+Thread 3 terminando
+Thread 4 terminando
