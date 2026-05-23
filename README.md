@@ -47,6 +47,7 @@ rt_linux_training/
 |---|---|
 | pthread_intro.c | Creación básica de hilos |
 | pthread_main_exit.c | Terminación del hilo principal usando pthread_exit() |
+| pthread_argument_example.c | Paso de argumentos usando punteros y memoria dinámica |
 
 ---
 
@@ -72,10 +73,11 @@ gcc app/pthread_intro.c -o app/pthread_intro -lpthread
 
 - Threads
 - Concurrencia
-- Scheduler Linux
 - pthread_create()
 - pthread_exit()
-- pthread_join()
+- Paso de argumentos a threads
+- Punteros
+- Memoria dinámica (malloc/free)
 
 ---
 
