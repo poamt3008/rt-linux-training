@@ -1,10 +1,17 @@
+/*
+Programa de creación de hilos
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <unistd.h>
 
+//Defino la cantidad de Hilos mediante una etiqueta
 #define NUM_THREADS 5
 
+/***********Rutina llamada por Hilo (tarea)**************/
 void* imprimir(void* arg)
 {
     int id = *(int*)arg;
@@ -18,26 +25,33 @@ void* imprimir(void* arg)
     pthread_exit(NULL);
 }
 
+
 int main()
 {
+    /****** las variables de los Hilos con pthread_t ************/
     pthread_t threads[NUM_THREADS];
-    int ids[NUM_THREADS];
+    int ids[NUM_THREADS];   //Creo una identificación del Hilo
 
-    for(int t = 0; t < NUM_THREADS; t++)
+
+    for(int k = 0; k < NUM_THREADS; k++)
     {
-        ids[t] = t;
+        ids[k] = k;
 
-        printf("Creando hilo %d\n", t);
-
+        printf("Creando hilo %d\n", k);
+        
+        /*********Fucion para CREAR hilos utilizando la variables definidas************/
         pthread_create(
-            &threads[t],
+            &threads[k],
             NULL,
             imprimir,
-            &ids[t]
+            &ids[k]
         );
     }
 
-    printf("Main thread terminando...\n");
+    /*****Esta es toda la tarea del proceso main
+    Luego se cierra, pero deja que continue los hilos anteriores */
+
+    printf("Hilo main terminando...\n");
 
     pthread_exit(NULL);
 }

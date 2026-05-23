@@ -1,0 +1,16 @@
+Creando hilo 0
+Creando hilo 1
+Hola, soy el hilo 0
+Creando hilo 2
+Hola, soy el hilo 1
+Creando hilo 3
+Hola, soy el hilo 2
+Creando hilo 4
+Hola, soy el hilo 3
+Hilo main terminando...
+Hola, soy el hilo 4
+Hilo 0 terminando
+Hilo 1 terminando
+Hilo 2 terminando
+Hilo 3 terminando
+Hilo 4 terminando
